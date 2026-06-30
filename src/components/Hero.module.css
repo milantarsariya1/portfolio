@@ -1,0 +1,220 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8rem 2rem 4rem 2rem;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.glow {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.glowSecond {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(50px);
+}
+
+.intro {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text-secondary);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+.ctas {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+  color: var(--text-primary);
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.25);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);
+}
+
+.btnSecondary {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-color-hover);
+  transform: translateY(-3px);
+}
+
+/* Right Side Graphic */
+.visualWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.windowCard {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  transform: perspective(1000px) rotateY(-10deg) rotateX(10deg);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.windowCard:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
+}
+
+.windowHeader {
+  height: 40px;
+  background: rgba(13, 17, 34, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotRed { background: #ff5f56; }
+.dotYellow { background: #ffbd2e; }
+.dotGreen { background: #27c93f; }
+
+.windowTitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+}
+
+.windowBody {
+  padding: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #a9b1d6;
+  line-height: 1.5;
+}
+
+.lineNum {
+  color: #444b6a;
+  margin-right: 1rem;
+  user-select: none;
+}
+
+.syntaxKeyword { color: #bb9af3; }
+.syntaxName { color: #7aa2f7; }
+.syntaxString { color: #9ece6a; }
+.syntaxValue { color: #ff9e64; }
+.syntaxComment { color: #565f89; }
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ctas {
+    justify-content: center;
+  }
+  
+  .windowCard {
+    transform: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .windowCard:hover {
+    transform: scale(1.02);
+  }
+}

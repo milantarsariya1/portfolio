@@ -1,0 +1,153 @@
+.projects {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.headingNumber {
+  color: var(--accent-cyan);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.headingLine {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.projectImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .projectImage {
+  transform: scale(1.08);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 30%, rgba(7, 9, 19, 0.8) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cardContent {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.card:hover .title {
+  color: var(--accent-cyan);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .tag {
+  color: var(--text-secondary);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.linkItem {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.linkItem:hover {
+  color: var(--accent-cyan);
+}
+
+.linkIcon {
+  width: 16px;
+  height: 16px;
+}
