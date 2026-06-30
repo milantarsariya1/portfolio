@@ -44,7 +44,7 @@ export default function About() {
         {/* Left Side: Bio & Skills */}
         <div className={styles.bio}>
           <p>
-            Hello! My name is Alex, and I build high-performance web products that live on the intersection of engineering and design. My passion for web development began when I experimented with customizing browser themes and CSS inject scripts.
+            Hello! My name is Milan, and I build high-performance web products that live on the intersection of engineering and design. My passion for web development began when I experimented with customizing browser themes and CSS inject scripts.
           </p>
           <p>
             Fast-forward to today, and I have worked in agency setups, agile start-up ecosystems, and as a freelance developer. I focus on writing clean, modular, and maintainable code to create interfaces that feel alive and responsive.

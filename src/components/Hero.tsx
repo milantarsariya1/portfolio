@@ -26,10 +26,10 @@ export default function Hero() {
       <div className={styles.container}>
         <div>
           <p className={styles.intro}>Hi, my name is</p>
-          <h1 className={`${styles.title} text-gradient`}>Alex Mercer</h1>
+          <h1 className={`${styles.title} text-gradient`}>Milan Tarsariya</h1>
           <h2 className={styles.subtitle}>I build exceptional digital interfaces.</h2>
           <p className={styles.description}>
-            I am a full-stack creative developer specializing in engineering high-performance,
+            I am a full-stack developer specializing in engineering high-performance,
             visually stunning, and interactive web applications. Currently, I build next-generation applications with React, Next.js, and TypeScript.
           </p>
           
@@ -81,12 +81,12 @@ export default function Hero() {
               <div>
                 <span className={styles.lineNum}>02</span>
                 &nbsp;&nbsp;<span className={styles.syntaxName}>name</span>:{" "}
-                <span className={styles.syntaxString}>&quot;Alex Mercer&quot;</span>,
+                <span className={styles.syntaxString}>&quot;Milan Tarsariya&quot;</span>,
               </div>
               <div>
                 <span className={styles.lineNum}>03</span>
                 &nbsp;&nbsp;<span className={styles.syntaxName}>role</span>:{" "}
-                <span className={styles.syntaxString}>&quot;Creative Developer&quot;</span>,
+                <span className={styles.syntaxString}>&quot;Full-Stack Developer&quot;</span>,
               </div>
               <div>
                 <span className={styles.lineNum}>04</span>

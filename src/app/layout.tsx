@@ -15,24 +15,24 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Mercer | Creative Developer & Designer",
-  description: "Portfolio of Alex Mercer, a creative developer specializing in building exceptional, high-performance digital experiences, interactive web applications, and stunning designs.",
-  keywords: ["Creative Developer", "Next.js Portfolio", "React Developer", "TypeScript", "UI/UX Designer", "Front-end Engineer"],
-  authors: [{ name: "Alex Mercer" }],
-  creator: "Alex Mercer",
+  title: "Milan Tarsariya | Full Stack Developer",
+  description: "Portfolio of Milan Tarsariya, a full stack developer specializing in building exceptional, high-performance web applications and digital experiences.",
+  keywords: ["Full Stack Developer", "Next.js Portfolio", "React Developer", "TypeScript", "Node.js Developer", "Software Engineer"],
+  authors: [{ name: "Milan Tarsariya" }],
+  creator: "Milan Tarsariya",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://alexmercer.dev",
-    title: "Alex Mercer | Creative Developer & Designer",
-    description: "Portfolio of Alex Mercer, a creative developer specializing in building exceptional, high-performance digital experiences.",
-    siteName: "Alex Mercer Portfolio",
+    url: "https://milantarsariya.dev",
+    title: "Milan Tarsariya | Full Stack Developer",
+    description: "Portfolio of Milan Tarsariya, a full stack developer specializing in building exceptional, high-performance web applications.",
+    siteName: "Milan Tarsariya Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Mercer | Creative Developer & Designer",
-    description: "Portfolio of Alex Mercer, a creative developer specializing in building exceptional, high-performance digital experiences.",
-    creator: "@alexmercer",
+    title: "Milan Tarsariya | Full Stack Developer",
+    description: "Portfolio of Milan Tarsariya, a full stack developer specializing in building exceptional, high-performance web applications.",
+    creator: "@milantarsariya",
   },
   robots: {
     index: true,

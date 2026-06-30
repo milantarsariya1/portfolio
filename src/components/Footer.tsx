@@ -32,7 +32,7 @@ const socialsList = [
   },
   {
     name: "Email",
-    url: "mailto:alex@alexmercer.dev",
+    url: "mailto:milan@milantarsariya.dev",
     icon: (
       <svg className={styles.socialIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -67,7 +67,7 @@ export default function Footer() {
         <p className={styles.credit}>
           Designed & Built by{" "}
           <a href="#" className={styles.creditDev}>
-            Alex Mercer
+            Milan Tarsariya
           </a>
         </p>
         <p className={styles.techStack}>

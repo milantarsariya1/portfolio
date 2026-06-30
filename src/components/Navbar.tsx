@@ -51,7 +51,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <a href="#" className={styles.logo} onClick={(e) => handleLinkClick(e, "hero")}>
-          <span className="text-gradient">Alex</span>
+          <span className="text-gradient">Milan</span>
           <span className={styles.logoDot}></span>
         </a>
 
